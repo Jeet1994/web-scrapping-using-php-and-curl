@@ -13,7 +13,7 @@ function curlGet($url) {
 	return $results;
 }
 
-$packtPage = curlGet('http://www.espncricinfo.com/ci/engine/match/scores/live.html');
+$packtPage = curlGet('http://www.espncricinfo.com/');
 //search for images
 foreach($packtPage->find("img") as $element)
 	echo $element->src . '<br>';
